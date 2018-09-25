@@ -1,0 +1,322 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300);
+body, html {
+  height: 100%;
+  margin: 0px;
+}
+
+body {
+  background: black;
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background: black;
+}
+
+header {
+  width: 100%;
+  background: black;
+  height: 60px;
+  line-height: 60px;
+  border-bottom: 1px solid black;
+}
+
+.hamburger {
+  background: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 45px;
+  padding: 5px 15px 0px 15px;
+  color: #999;
+  border: 0;
+  font-size: 1.8em;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 10000000000000;
+}
+
+.cross {
+  background: none;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  padding: 7px 15px 0px 15px;
+  color: #999;
+  border: 0;
+  font-size: 3em;
+  line-height: 65px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 10000000000000;
+}
+
+.menu {
+  z-index: 1000000;
+  font-weight: bold;
+  width: 100%;
+  background: #f1f1f1;
+  position: absolute;
+  text-align: center;
+  font-size: 12px;
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  list-style-image: none;
+}
+
+.menu li {
+  display: block;
+  padding: 15px 0 15px 0;
+  border-bottom: #dddddd 1px solid;
+}
+
+.menu li:hover {
+  display: block;
+  background: #ffffff;
+  padding: 15px 0 15px 0;
+  border-bottom: #dddddd 1px solid;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  margin: 0px;
+  color: #666;
+}
+
+.menu ul li a:hover {
+  color: #666;
+  text-decoration: none;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #666;
+}
+
+.menu a:hover {
+  text-decoration: none;
+  color: #666;
+}
+
+.glyphicon-home {
+  color: white;
+  font-size: 1.5em;
+  margin-top: 5px;
+  margin: 0 auto;
+}
+
+span {
+  padding-left: 20px;
+}
+
+a {
+  color: #336699;
+}
+
+.container {
+  width: 360px;
+}
+
+.gallery {
+  position: relative;
+}
+
+.firstimage {
+  display: block;
+  margin-top: 50px;
+  padding-bottom: 0px;
+  max-width: 100%;
+  border-radius: 10%;
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  opacity: .7;
+  z-index: -1;
+}
+
+.about {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-size: cover;
+  background-clip: content-box;
+  background-color: #f66f6f;
+  box-sizing: border-box;
+  position: relative;
+  margin: auto;
+  top: 100px;
+  left: -78px;
+  font: 400 1em/70px 'Oswald', sans-serif;
+  color: #fbfbfb;
+  text-indent: 15px;
+}
+
+.about:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border: 50px solid transparent;
+  border-bottom: 50px solid #fefefe;
+  bottom: -60px;
+  right: -65px;
+  box-shadow: 0px 7px 6px -9px black;
+  transform: rotate(135deg);
+}
+
+.about:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border: 50px solid transparent;
+  border-top: 50px solid #fefefe;
+  top: -60px;
+  left: -65px;
+  box-shadow: 0px -7px 6px -9px black;
+  transform: rotate(135deg);
+}
+
+.galleryinside {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  opacity: .8;
+  width: 360px;
+  margin-left: 19px;
+}
+
+h2 {
+  color: white;
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  margin-top: 150px;
+}
+
+p {
+  color: white;
+  padding: 30px;
+  margin-right: 0px;
+  font-size: 14px;
+  margin-top: 40px;
+  padding-top: 22px;
+  text-align: justify;
+  word-break: break-all;
+  font-family: 'Helvetica Neue';
+  font-weight: 800;
+  line-height: 1.6;
+  width: 75%;
+  align-self: flex-end;
+  background-color: grey;
+  border-radius: 18%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    width: 1000px;
+  }
+
+  .firstimage {
+    left: 49%;
+  }
+
+  .galleryinside {
+    display: flex;
+    flex-direction: column;
+    opacity: .8;
+    width: 100%;
+    margin-left: auto;
+  }
+
+  h2 {
+    width: 100%;
+    text-align: center;
+    margin-left: 200px;
+  }
+
+  p {
+    width: 30%;
+    height: 20%;
+    background-color: grey;
+    padding-top: 100px;
+    padding-bottom: 0px;
+    margin-top: 100px;
+    border-radius: 8%;
+    margin-bottom: 0px;
+    margin-right: 250px;
+  }
+
+  .about {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-size: cover;
+    background-clip: content-box;
+    background-color: #f66f6f;
+    box-sizing: border-box;
+    position: relative;
+    margin: auto;
+    top: 100px;
+    left: 80px;
+    font: 400 1em/70px 'Oswald', sans-serif;
+    color: #fbfbfb;
+    text-indent: 15px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 600px;
+  }
+
+  .firstimage {
+    left: 17%;
+  }
+
+  .galleryinside {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    opacity: .8;
+    width: 100%;
+    margin-left: auto;
+  }
+
+  h2 {
+    align-self: left;
+  }
+
+  p {
+    width: 50%;
+    height: 20%;
+    background-color: grey;
+    padding-top: 70px;
+    padding-bottom: 0px;
+    margin-top: 100px;
+    border-radius: 0;
+    margin-bottom: 0px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .container {
+    width: 320px;
+  }
+
+  .galleryinside {
+    width: 320px;
+  }
+
+  p {
+    width: 300px;
+  }
+}
